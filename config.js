@@ -5,5 +5,6 @@ module.exports = {
     host: process.env.DB_HOST || "localhost",
     database: process.env.DB_NAME || "covidtrack",
     user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "eduardojr",
+    password: process.env.DB_PASSWORD || "N4th4ly0987",
+    //password: process.env.DB_PASSWORD || "eduardojr",
 }

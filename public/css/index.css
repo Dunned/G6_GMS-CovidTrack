@@ -168,22 +168,22 @@ section#contact form#contactForm .form-control:focus {
 section#contact form#contactForm ::-webkit-input-placeholder {
   font-family: var(--primary-font-family);
   font-weight: 700;
-  color: #ced4da;
+  color: #fdfeff;
 }
 section#contact form#contactForm :-moz-placeholder {
   font-family: var(--second-font-family);
   font-weight: 700;
-  color: #ced4da;
+  color: #fdfeff;
 }
 section#contact form#contactForm ::-moz-placeholder {
   font-family: var(--second-font-family);
   font-weight: 700;
-  color: #ced4da;
+  color: #fdfeff;
 }
 section#contact form#contactForm :-ms-input-placeholder {
   font-family: var(--second-font-family);
   font-weight: 700;
-  color: #ced4da;
+  color: #fdfeff;
 }
 /* Fin estilos Contactos */
 
