@@ -8,6 +8,8 @@ const doctorRouter = require("./doctor");
 
 const { getUserByMail, getDocByDNI, getPacsDNI, getCitasByDocDNI, getPacByDNI, createPac } = require('../database/queries')
 
+//Colocar Router para la recuperación de contraseña
+
 router.get("/", (peticion, respuesta) => {
   respuesta.render("index");
 });
@@ -16,6 +18,9 @@ router.get("/login", (peticion, respuesta) => {
 });
 router.get("/register", (peticion, respuesta) => {
   respuesta.render("register");
+});
+router.get("/forget", (peticion, respuesta) => {
+  respuesta.render("forget");
 });
 
 // Creación de Paciente Ruta

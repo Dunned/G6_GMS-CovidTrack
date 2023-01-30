@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include('partials/head')%>
-    <title>forget</title>
-</head>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include('partials/head')%>
+            <link rel="stylesheet" type="text/css" href="/css/login.css">
+            <link rel="stylesheet" href="/css/register.css" media="(min-width: 768px)">
+            <title>Recuperación de contraseña</title>
+    </head>
 <body>
-    contraseña olvidada falta implementar
+    <div class="forget container">
+        <form action="forget" method="POST" class="login-email">
+            <p class="login-text " style="font-size: 2rem; font-weight: 800; ">Enviar Email de recuperación</p>
+            <div class="reg_inputs">
+                <div class="col1">
+                    <div class="input-group">
+                        <h3>Enviar Email de Recuperación</h3>
+                    </div>
+                    <div class="input-group">
+                        <input id="emailRec" type="email" placeholder="Correo electronico" name="mail" value=""
+                            autocomplete="email" required>
+                    </div>
+                    <div class="input-group">
+                        <button id="submitEnv1" name="submit" class="btn">Enviar</button>
+                    </div>
+                    <br><br><br>
+                    <div class="input-group">
+                        <h3>Resetear contraseña</h3>
+                    </div>
+                    <div class="input-group">
+                        <input id="nuevoPsw1" type="text" placeholder="Nueva Contraseña" name="mail" value="" required>
+                    </div>
+                    <div class="input-group">
+                        <input id="nuevoPsw2" type="text" placeholder="Repita Contraseña" name="mail" value="" required>
+                    </div>
+                    <div class="input-group">
+                        <button id="submitEnv2" name="submit" class="btn">Enviar</button>
+                    </div>
+                </div>
+            </div>            
+        </form>
+    </div>
+    <script>
+        window.addEventListener("beforeunload", function (e) {
+            document.querySelector('.login-email').reset();
+        });
+    </script>
 </body>
 </html>
