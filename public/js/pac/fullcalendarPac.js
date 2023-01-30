@@ -1,4 +1,6 @@
 /* Referencia: https://github.com/todo-list-app/todo-list-app.github.io/blob/e35d8a23a934f74b7e47cf07b3e8814930970b37/todo.js#L522*/
+
+// Codigo de Logica de calendario
 function main() {
   var citasList = JSON.parse(document.getElementById("citasList").innerText);
   console.log(citasList);
